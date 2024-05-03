@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https//www.google.com"/>
+  <parameter name="key" value="12345"/>
+  <listeners>
+    <listener class-name="RealSeleniumTestng.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="RealSeleniumTestng.Sampletestngproject">
+        <methods>
+          <include name="VerifyLogin"/>
+          <include name="verifyTitle"/>
+          <include name="teardown"/>
+          <include name="VerifyLogo"/>
+          <include name="verifyNumberofLinks"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- RealSeleniumTestng.Sampletestngproject -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
